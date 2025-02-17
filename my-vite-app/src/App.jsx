@@ -23,7 +23,7 @@ function App() {
       return;
     }
 
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/get_question`, {
+    fetch(`${process.env.VITE_REACT_APP_BACKEND_URL}/get_question`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
