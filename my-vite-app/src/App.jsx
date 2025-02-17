@@ -23,7 +23,7 @@ function App() {
       return;
     }
 
-    fetch("http://localhost:3000/get_question", {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/get_question`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -3,9 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://AmarKoonar.github.io/AiQuizMaker",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --depth 1",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -25,6 +29,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "postcss": "^8.5.2",
     "tailwindcss": "^4.0.6",
